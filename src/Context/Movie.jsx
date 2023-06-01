@@ -10,7 +10,6 @@ const MovieContextProvider = (props) => {
       const response = await fetch("https://api.tvmaze.com/search/shows?q=all");
       const data = await response.json();
       setAllMovies(data);
-      console.log(data[0].show)
     } catch (err) {
       console.error(err);
     }

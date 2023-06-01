@@ -21,9 +21,8 @@ const MovieCard = (props) => {
   }, []);
 
   const handleClick = () => {
-    console.log(allMovies.filter((movie) => movie.show.id === data.id));
     navigate("/moviedetails", {
-      state: { object: movieDetails },
+      state: { object: movieDetails[0].show },
     });
   };
 
