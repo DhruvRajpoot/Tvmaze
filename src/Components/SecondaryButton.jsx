@@ -8,9 +8,7 @@ const SecondaryButton = (props) => {
     justifyContent: "center",
     alignItems: "center",
     gap: "6px",
-    color: "#f4d113",
-    border: "1px solid #f4d113",
-    borderRadius: "64px",
+    borderRadius: "5px",
     padding: "12px 30px",
     cursor: "pointer",
   };
@@ -18,7 +16,7 @@ const SecondaryButton = (props) => {
   return (
     <button
       type="button"
-      className="text-sm sm:text-base font-semibold hover:bg-[#fff9d4] duration-300 active:scale-95"
+      className="text-sm sm:text-base font-semibold text-[#f71a2c] border border-[#f71a2c] hover:bg-[#000000e8] hover:text-white hover:border-white duration-300 active:scale-95"
       onClick={props.onClick}
       style={style}
     >

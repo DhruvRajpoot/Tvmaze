@@ -8,10 +8,8 @@ const PrimaryButton = (props) => {
     justifyContent: "center",
     alignItems: "center",
     gap: "6px",
-    backgroundColor: "#f4d113",
-    color: "#202020",
     border: "none",
-    borderRadius: "64px",
+    borderRadius: "5px",
     padding: "12px 30px",
     cursor: "pointer",
   };
@@ -19,7 +17,7 @@ const PrimaryButton = (props) => {
   return (
     <button
       type="button"
-      className="text-sm sm:text-base font-semibold hover:shadow-[3px_3px_14px_#fee65e] duration-300 active:scale-95"
+      className="text-sm sm:text-base font-semibold bg-[#f71a2c] text-[#202020] hover:text-white duration-300 active:scale-95"
       onClick={props.onClick}
       style={style}
     >
