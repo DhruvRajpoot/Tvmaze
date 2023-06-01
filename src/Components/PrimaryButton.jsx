@@ -7,7 +7,7 @@ const PrimaryButton = (props) => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    gap: "6px",
+    gap: "8px",
     border: "none",
     borderRadius: "5px",
     padding: "12px 30px",
@@ -21,8 +21,8 @@ const PrimaryButton = (props) => {
       onClick={props.onClick}
       style={style}
     >
-      <span>{props.icon}</span>
-      <p>{props.text}</p>
+      <span className="text-lg">{props.icon}</span>
+      <p className="tracking-widest">{props.text}</p>
     </button>
   );
 };

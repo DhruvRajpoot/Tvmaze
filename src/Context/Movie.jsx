@@ -4,14 +4,13 @@ const MovieContext = createContext();
 
 const MovieContextProvider = (props) => {
   const [allMovies, setAllMovies] = useState([]);
-  const [topMovies, setTopMovies] = useState({});
 
   const getMovies = async () => {
     try {
       const response = await fetch("https://api.tvmaze.com/search/shows?q=all");
       const data = await response.json();
-      setTopMovies(data[0]);
-      setAllMovies(data.slice(1));
+      setAllMovies(data);
+      console.log(data[0].show)
     } catch (err) {
       console.error(err);
     }
@@ -22,7 +21,7 @@ const MovieContextProvider = (props) => {
   }, []);
 
   return (
-    <MovieContext.Provider value={{ topMovies, allMovies }}>
+    <MovieContext.Provider value={{ allMovies }}>
       {props.children}
     </MovieContext.Provider>
   );

@@ -8,9 +8,9 @@ import Navbar from "./Components/Navbar";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="w-screen">
+      <div className="w-full min-h-screen bg-black text-white">
         <Navbar />
-        <div className="w-full">
+        <div className="w-full h-full">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/moviedetails" element={<MovieDetails />} />
