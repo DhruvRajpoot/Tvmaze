@@ -31,7 +31,7 @@ const MovieDetails = () => {
         <img
           src={data.image.original}
           alt={data.name}
-          className="w-full sm:w-4/5 h-[85vh]"
+          className="w-full sm:w-4/5 h-[60vh] sm:h-[85vh]"
         />
         <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black"></div>
       </div>

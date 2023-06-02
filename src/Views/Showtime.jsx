@@ -14,8 +14,8 @@ const Showtime = forwardRef((props,ref) => {
       }}
       ref={ref}
     >
-      <h1 className="text-5xl">
-        <span className="font-extrabold text-6xl me-2">Now</span> Showing
+      <h1 className="text-3xl sm:text-5xl">
+        <span className="font-extrabold text-4xl sm:text-6xl sm:me-2">Now</span> Showing
       </h1>
       <div className="flex flex-wrap gap-12 sm:gap-8 sm:gap-y-12 justify-center">
         {(allMovies.length !== 0 ? allMovies : []).map((movie, index) => (

@@ -50,7 +50,7 @@ const BookingForm = (props) => {
       {selectedMovie && (
         <>
           <div className="w-full h-full fixed top-0 left-0 bg-black bg-opacity-60 z-40"></div>
-          <div className="booking-form w-[95vw] md:w-[75vw] lg:w-[60vw] xl:w-[45vw] h-[90vh] sm:h-[70vh] fixed left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] z-50 rounded-lg bg-[#15151c] px-5 py-4 overflow-scroll">
+          <div className="booking-form w-full md:w-[75vw] lg:w-[60vw] xl:w-[45vw] h-[90vh] sm:h-[70vh] fixed left-1/2 top-[55%] sm:top-1/2 translate-x-[-50%] translate-y-[-50%] z-50 rounded-t-2xl sm:rounded-lg bg-[#15151c] px-2 xsm:px-3 sm:px-5 py-4 overflow-scroll">
             <div className="flex justify-center items-center">
               <h1 className="text-xl sm:text-2xl">Movie Booking Form</h1>
               <button
