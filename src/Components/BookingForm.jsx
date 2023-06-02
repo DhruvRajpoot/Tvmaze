@@ -42,7 +42,6 @@ const BookingForm = (props) => {
 
   useEffect(() => {
     const previousData = localStorage.getItem("ticketData");
-    console.log(previousData);
   }, []);
 
   return (
@@ -94,9 +93,8 @@ const BookingForm = (props) => {
                       name="phone"
                       id="phone"
                       onChange={handleChange}
+                      pattern='[0-9]{10}'
                       required
-                      minLength={10}
-                      maxLength={10}
                     />
                     <input
                       className="bg-[#303030] rounded-md p-2 outline-none"

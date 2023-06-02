@@ -17,10 +17,9 @@ const PrimaryButton = (props) => {
   return (
     <button
       type={props.type}
-      className={`text-sm sm:text-base font-semibold bg-[${props.disabled?'#c11322':'#f71a2c'}] text-[#202020] hover:text-white duration-300 active:scale-95`}
+      className={`text-sm sm:text-base font-semibold bg-[#f71a2c] text-[#202020] hover:text-white duration-300 active:scale-95`}
       onClick={props.onClick}
       style={style}
-      disabled={props.disabled} 
     >
       <span className="text-lg">{props.icon}</span>
       <p className="tracking-widest">{props.text}</p>
@@ -30,7 +29,6 @@ const PrimaryButton = (props) => {
 
 PrimaryButton.defaultProps = {
   height: "48px",
-  isDiabled: false,
   type: "button",
 };
 
