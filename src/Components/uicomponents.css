@@ -1,0 +1,25 @@
+.booking-form{
+    animation: slide-up .5s ease-in-out;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateX(-50%) translateY(100%);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+.alert{
+    animation: zoomout .5s ease-in-out;
+}
+
+@keyframes zoomout {
+    0% {
+        transform: translateX(-50%) scale(0);
+    }
+    100% {
+        transform: translateX(-50%) scale(1);
+    }
+}

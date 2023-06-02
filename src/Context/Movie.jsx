@@ -4,6 +4,8 @@ const MovieContext = createContext();
 
 const MovieContextProvider = (props) => {
   const [allMovies, setAllMovies] = useState([]);
+  const [selectedMovie, setSelectedMovie] = useState({});
+  const [bookingForm, setBookingForm] = useState(true);
 
   const getMovies = async () => {
     try {
@@ -20,7 +22,9 @@ const MovieContextProvider = (props) => {
   }, []);
 
   return (
-    <MovieContext.Provider value={{ allMovies }}>
+    <MovieContext.Provider
+      value={{ allMovies, selectedMovie, setSelectedMovie , bookingForm, setBookingForm }}
+    >
       {props.children}
     </MovieContext.Provider>
   );
