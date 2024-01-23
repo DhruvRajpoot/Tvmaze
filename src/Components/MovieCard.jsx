@@ -28,7 +28,7 @@ const MovieCard = (props) => {
 
   return (
     <div className="flex flex-col justify-between gap-2 w-60 sm:w-56 h-full bg-transparent">
-      <img src={data.image.medium} alt={data.name} className="w-full h-80" />
+      <img src={data?.image?.medium} alt={data.name} className="w-full h-80" />
       <h1 className="font-semibold tracking-wide pt-2">{data.name}</h1>
       <p className="text-xs text-[#777777]">{data.genres.join(", ")}</p>
       <p className="text-xs text-[#777777] mb-2">Premiered {formattedDate}</p>
